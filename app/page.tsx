@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Work from '../components/Work';
 import VideoWork from '../components/Video';
+import More from '../components/More';
 
 
 // set deconstructed array to store toggle fucntion and visibility variable
@@ -17,6 +18,7 @@ export default function Home() {
       <About/>
       <Work/>
       <VideoWork/>
+      <More/>
     </main>
   )
 }

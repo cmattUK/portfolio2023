@@ -12,7 +12,7 @@ import Button from '../components/Button';
 function Work(){
     return(
         <section className="workSection px-4 my-4 py-16 container max-w-[1200px] mx-auto" id="Work">
-            <div className="pb-2">
+            <div className="pb-2 px-4">
                 <h1 className="Mons md:text-6xl lg:text-8xl text-4xl flex flex-col font-black text-zinc-800 uppercase text-center">Recent Work</h1>
                 <WorkExample 
                     imageLink="https://www.jabcrosshook.co.uk"
