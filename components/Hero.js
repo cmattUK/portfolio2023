@@ -3,10 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import portrait from '../public/img/meportrait.png';
-
 import ButtonPink from './Button';
-import BodyLink from './bodyLink';
 import { AiOutlineDownCircle, AiFillCaretDown, AiFillCaretUp, AiOutlineMail, AiFillCopy} from "react-icons/ai";
+
 
 function Hero(){
     const [isVisible, setVisible] = useState(false);
@@ -15,8 +14,8 @@ function Hero(){
       setVisible(!isVisible);
     };
     return(
+    
         <section className="heroSection container columns-1 px-4 text-center mx-auto h-screen flex content-center">
-          
             <div className="flex justify-around flex-col w-full ">
                 <div className="max-w-[1200px] mx-auto">
                     <Image src={portrait} className='mx-auto -mt-12' width={180} alt="A picture of Chris Matthewman"/>
