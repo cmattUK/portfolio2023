@@ -5,6 +5,10 @@ import Image from 'next/image';
 import portrait from '../public/img/meportrait.png';
 import ButtonPink from './Button';
 import { AiOutlineDownCircle, AiFillCaretDown, AiFillCaretUp, AiOutlineMail, AiFillCopy} from "react-icons/ai";
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+
 
 
 function Hero(){
@@ -32,7 +36,10 @@ function Hero(){
                                 <ButtonPink link="mailto:chris.elixir@gamil.com" wFull="yes" borderB='yes' title ='Use email app' iconName={<AiOutlineMail className="inline"/>}/>
                             </div>
                         </div>
-                        <a className="text-xl float self-center font-semibold text-rose-700 mx-4 hover:cursor-pointer hover:text-rose-800" onClick={() => window.location.replace("/#Work")}><AiOutlineDownCircle className="inline animate-bounce w-6 h-6"/> See my work</a>
+                        <Link activeClass="active" to="workSection" spy={true} smooth={true} duration={500}  className="text-xl float self-center font-semibold text-rose-700 mx-4 hover:cursor-pointer hover:text-rose-800">
+                        
+                        <AiOutlineDownCircle className="inline animate-bounce w-6 h-6"/> See my work
+                        </Link>
                     </div>
                 </div>
             </div>

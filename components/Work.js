@@ -7,11 +7,15 @@ import work3 from '../public/img/work3.png';
 import work4 from '../public/img/work4.png';
 import BodyLink from '../components/bodyLink';
 import Button from '../components/Button';
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 
 function Work(){
     return(
-        <section className="workSection px-4 my-4 py-16 container max-w-[1200px] mx-auto" id="Work">
+        
+        <Element className="workSection px-4 my-4 py-16 container max-w-[1200px] mx-auto" id="Work">
             <div className="pb-2 px-4">
                 <h1 className="Mons md:text-6xl lg:text-8xl text-4xl flex flex-col font-black text-zinc-800 uppercase text-center">Recent Work</h1>
                 <WorkExample 
@@ -47,7 +51,7 @@ function Work(){
                 />
 
             </div>
-        </section>
+        </Element>
     )
 }
 export default Work;

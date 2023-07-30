@@ -9,6 +9,7 @@ import More from '../components/More';
 import Quotes from '../components/Quotes';
 
 
+
 // set deconstructed array to store toggle fucntion and visibility variable
 export default function Home() {
 
