@@ -5,7 +5,7 @@ import BodyLink from './bodyLink';
 
 function VideoWork(){
     return(
-            <section className="aboutSection px-4  bg-gray-100 my-4 py-16 ">
+            <section className="aboutSection px-4  bg-gray-100 my-4 py-12 ">
                 <div className="max-w-[1200px] mx-auto p-4 flex flex-col relative">
                     <div className=" text-zinc-800 text-center px-4">
                         <h1 className="Mons md:text-6xl lg:text-8xl text-4xl flex flex-col font-black text-zinc-800 uppercase text-center">Video Work</h1>
@@ -13,11 +13,9 @@ function VideoWork(){
                             Even though I love the web, every now and then -if I feel like a challenge- I'll take on a wildly ambitious video project just to keep myself inspired.
                         </p>
                     </div>
-
                     <div className="relative overflow-hidden w-full pt-[56.25%] px-4">
                         <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"   src="https://www.youtube.com/embed/RPF-EsbGrDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-
                     <div className="relative overflow-hidden w-full pt-[56.25%] mt-8 px-4">
                         <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"   src="https://www.youtube.com/embed/cfiPth_M9vI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>

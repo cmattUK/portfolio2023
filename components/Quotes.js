@@ -94,8 +94,8 @@ function Quotes(){
       <section className="quotesSection px-4 border-t-2 border-gray-300">
           <div className="max-w-[1200px] mx-auto px-4 flex flex-col relative">
               <div className=" text-zinc-800 text-center relative mx-auto">
-                  <div className=" w-full">
-                      <div className="row min-h-[100px] pt-4">
+                  <div className=" w-full flex justify-center">
+                      <div className="row min-h-[90px] py-4">
                           <p id={quote.id} className={`quote text-sm pt-4 max-w-[900px] ${isActive ? 'transition ease-in-out opacity-100 duration-200' : 'opacity-0 translate-y-6'}`}>{quote.quote} - <strong>{quote.name}</strong></p>
                       
                       </div>

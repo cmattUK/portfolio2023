@@ -5,7 +5,6 @@ import Image from 'next/image';
 import portrait from '../public/img/meportrait.png';
 import ButtonPink from './Button';
 import { AiOutlineDownCircle, AiFillCaretDown, AiFillCaretUp, AiOutlineMail, AiFillCopy} from "react-icons/ai";
-import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
@@ -19,7 +18,7 @@ function Hero(){
     };
     return(
     
-        <section className="heroSection container columns-1 px-4 text-center mx-auto h-screen flex content-center">
+        <section className="heroSection columns-1 px-4 text-center mx-auto h-screen flex content-center">
             <div className="flex justify-around flex-col w-full ">
                 <div className="max-w-[1200px] mx-auto">
                     <Image src={portrait} className='mx-auto -mt-12' width={180} alt="A picture of Chris Matthewman"/>
