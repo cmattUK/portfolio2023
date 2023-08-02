@@ -21,7 +21,7 @@ function ButtonPink(props) {
     }
     
     return(
-        <a className={setStyle} href={props.link} >{props.title} {props.iconName} {props.secondIcon}</a>
+        <a className={setStyle} href={props.link} target="_blank" rel="noopener noreferrer">{props.title} {props.iconName} {props.secondIcon}</a>
     )
 }
 
