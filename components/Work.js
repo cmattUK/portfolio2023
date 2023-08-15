@@ -10,23 +10,18 @@ import BodyLink from '../components/bodyLink';
 import Button from '../components/Button';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
+import { AiOutlineGithub } from 'react-icons/ai';
+import ButtonPink from '../components/Button';
 
 
 function Work(){
-
     const [modalOn, setModal] = useState(false);
-
     const toggleModal = () => {
       setModal(!modalOn);
     };
 
     return(
-
-        
         <Element className="workSection px-4 py-12 container max-w-[1200px] mx-auto" id="Work">
-
-      
             <div className="pb-2 px-4">
                 <h1 className="Mons md:text-6xl lg:text-8xl text-4xl flex flex-col font-black text-zinc-800 uppercase text-center">Recent Work</h1>
                 
@@ -46,7 +41,7 @@ function Work(){
                     siteButton={<Button title="visit site" link="https://animex.tees.ac.uk"/>}
                 />
                 <WorkExample 
-                    imageLink="./CPFF-event-page/index.html"
+                    imageLink="https://www.tees.ac.uk/depts/hr/"
                     image={
                         <Image src={work4} className=" w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
                         } 
@@ -74,20 +69,32 @@ function Work(){
 
                 <WorkExample 
                     image={
-                        <Image src={work7} className=" w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
+                        <Image src={work7} onClick={toggleModal} className="hover:cursor-pointer w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
                         } 
                     title="Building escape - UE4 C++" 
                     responsabilities=": Unreal Engine 4 | C++ " 
                     description={
-                        <p className="py-4 text-lg">I was tasked with redesigning the HR section of <BodyLink url="https://www.tees.ac.uk" external="yes" title="tees.ac.uk"/> Although much of graphic design was dictated by mockups submitted by the client there was a huge amount of server-side code to implement. 
-                        Creating the <BodyLink url="https://www.tees.ac.uk/depts/hr/jobs.cfm" title="job search" external="yes"/> was definitely a highpoint; this involved building multiple filters to asynchronously (AJAX) return search results.</p>
+                        <p className="py-4 text-lg">Over the last few years I've been interested in creating video games as a hobby -and also to improve my coding practices. Developing this demo in C++ was a tough challenge.
+
+                        Although I used tutorials to build the basics, I expanded upon my knowledge by creating more complex puzzles, adding assets from <BodyLink url="https://quixel.com/megascans/" title="MegaScans" external="yes"/> and the <BodyLink url="https://www.unrealengine.com/en-US/" title="Unreal marketplace" external="yes"/>, as well as more SFX.</p>
                     }
-                   siteButton={<button className="px-4 py-3 bg bg-rose-700 text-xl font-semibold text-white hover:bg-rose-900 inline-block text-center"   onClick={toggleModal}>Do something</button>}
+                   siteButton={<button className="px-4 py-3 bg bg-rose-700 text-xl font-semibold text-white hover:bg-rose-900 inline-block text-center"  onClick={toggleModal}>View demo</button>}
                 />
-                <div className={`bg-gray-800 fixed inset-0 z-10 overflow-y-auto w-full p-16 ${modalOn ? 'transition ease-in-out delay-100 scale-100' : 'scale-0'}`} onClick={toggleModal}>
-                   
-                    <div className="relative overflow-hidden w-full pt-[56.25%] mt-8 px-4 " onClick={toggleModal}>
-                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"  src="https://www.youtube.com/embed/COgcbafLbLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div className={`bg-white bg-opacity-90 fixed inset-0 z-10 overflow-y-auto w-full  ${modalOn ? 'transition ease-in-out delay-100 scale-100' : 'transition ease-in-out delay-100 scale-0'}`} onClick={toggleModal}>
+                    <div className="relative overflow-scroll w-full h-screen" onClick={toggleModal}>
+                        <div className="absolute top-0 left-0 right-0 bottom-0 w-[90%] mx-auto flex flex-col md:justify-center max-w-7xl">
+                           
+                            <div className="relative overflow-hidden w-full pt-[56.25%] mt-8 px-4">
+                            <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"  src="https://www.youtube.com/embed/COgcbafLbLo" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
+                            </div>
+                            <div className="py-8">
+                                <ButtonPink link="https://github.com/cmattUK/UE4BuildingEscape" buttonType="border" title ='View C++ code' iconName={<AiOutlineGithub className="inline"/>}/>
+                                <div className="mr-2 float-right">
+                                    <ButtonPink title="X Close" className="hover:cursor-pointer"/>
+                                </div>
+                            </div>
+                        </div>
+              
                     </div>
                 </div>   
             </div>

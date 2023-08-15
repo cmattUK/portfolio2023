@@ -34,7 +34,7 @@ function More(){
                             </div>
                             <button onClick={toggleConBox} className="px-4 py-3 bg bg-rose-700 text-xl font-semibold text-white hover:bg-rose-800 max-w-[300px] w-full hidden md:inline-block md:mx-auto">chris.elixir@gmail.com <AiFillCaretUp className="inline"/></button>
                             <div className={!isConVisible ? 'md:-translate-y-28 translate-y-32 scale-y-0 h-0 absolute w-full -mb-4' : 'md:-translate-y-42 -translate-y-[10.5rem] ease-in-out duration-200 scale-y-100 absolute w-full'}>
-                                <ButtonPink link="mailto:chris.elixir@gamil.com" wFull="yes" title ='Copy to clipboard' iconName={<AiFillCopy className="inline"/>}/>
+                                <ButtonPink wFull="yes" title ='Copy to clipboard' copyText="yes" iconName={<AiFillCopy className="inline"/>}/>
                                 <ButtonPink link="mailto:chris.elixir@gamil.com" wFull="yes" borderB='yes' title ='Use email app' iconName={<AiOutlineMail className="inline"/>}/>
                             </div>
                         </div>
