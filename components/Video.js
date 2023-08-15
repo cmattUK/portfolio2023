@@ -11,14 +11,14 @@ function VideoWork(){
                         </p>
                     </div>
                     <div className="relative overflow-hidden w-full pt-[56.25%] px-4">
-                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"   src="https://www.youtube.com/embed/RPF-EsbGrDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"   src="https://www.youtube.com/embed/RPF-EsbGrDg" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
                     </div>
                     <div className="relative overflow-hidden w-full pt-[56.25%] mt-8 px-4">
-                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"   src="https://www.youtube.com/embed/cfiPth_M9vI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"   src="https://www.youtube.com/embed/cfiPth_M9vI" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;e" allowfullscreen></iframe>
                     </div>
 
                     <div className="relative overflow-hidden w-full pt-[56.25%] mt-8 px-4">
-                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"  src="https://www.youtube.com/embed/i8KTZwwmBcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"  src="https://www.youtube.com/embed/i8KTZwwmBcI" title="YouTube video player" frameborder="0" allow="accelerometer;encrypted-media; gyroscope;" allowfullscreen></iframe>
                     </div>
                     <div className="triangle-container absolute md:mt-4 -top-24 md:-top-28 right-0 rotate-[20deg] animate-waving origin-center">
                         <svg height="60" width="60" className="fill-rose-600">

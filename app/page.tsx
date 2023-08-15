@@ -1,6 +1,5 @@
 'use client'
 
-
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -8,7 +7,6 @@ import Work from '../components/Work';
 import VideoWork from '../components/Video';
 import More from '../components/More';
 import Quotes from '../components/Quotes';
-import { Lines } from 'react-preloaders';
 
 
 export default function Home() {
@@ -25,7 +23,7 @@ export default function Home() {
       <VideoWork/>
       <More/>
       <Quotes/>
-      <Lines time={500} color={'#be123c'}  animation="slide-down"/>
+ 
     </main>
   )
 }
