@@ -39,7 +39,7 @@ function More(){
                             </div>
                         </div>
                         <div className=" flex justify-center">
-                            <ButtonPink iconName={<AiFillFilePdf className="inline w-6 h-6"/>} title="My CV" buttonType="border" link="mycv.pdf" align="center"/>
+                            <ButtonPink iconName={<AiFillFilePdf className="inline w-6 h-6"/>} title="My CV" buttonType="border" link="img/cv.pdf" align="center"/>
                         </div>
                     </div>
                 </div>
