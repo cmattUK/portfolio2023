@@ -5,11 +5,13 @@ import Image from 'next/image';
 import portrait from '../public/img/meportrait.png';
 import ButtonPink from './Button';
 
+
 import { AiOutlineDownCircle, AiFillCaretDown, AiFillCaretUp, AiOutlineMail, AiFillCopy} from "react-icons/ai";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 function Hero(){
+  
 
     const [isVisible, setVisible] = useState(false);
     const toggleBox = () => {

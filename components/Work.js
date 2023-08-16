@@ -17,7 +17,15 @@ import ButtonPink from '../components/Button';
 function Work(){
     const [modalOn, setModal] = useState(false);
     const toggleModal = () => {
+    let videoDiv = document.querySelector('.videoFrame');
+    console.log(videoDiv)
       setModal(!modalOn);
+      if(!modalOn){
+        videoDiv.src = `https://www.youtube.com/embed/COgcbafLbLo`;
+      } else{
+        videoDiv.src = `temp`;
+      }
+
     };
 
     return(
@@ -75,7 +83,6 @@ function Work(){
                     responsabilities=": Unreal Engine 4 | C++ " 
                     description={
                         <p className="py-4 text-lg">Over the last few years I've been interested in creating video games as a hobby -and also to improve my coding practices. Developing this demo in C++ was a tough challenge.
-
                         Although I used tutorials to build the basics, I expanded upon my knowledge by creating more complex puzzles, adding assets from <BodyLink url="https://quixel.com/megascans/" title="MegaScans" external="yes"/> and the <BodyLink url="https://www.unrealengine.com/en-US/" title="Unreal marketplace" external="yes"/>, as well as more SFX.</p>
                     }
                    siteButton={<button className="px-4 py-3 bg bg-rose-700 text-xl font-semibold text-white hover:bg-rose-900 inline-block text-center"  onClick={toggleModal}>View demo</button>}
@@ -85,7 +92,7 @@ function Work(){
                         <div className="absolute top-0 left-0 right-0 bottom-0 w-[90%] mx-auto flex flex-col md:justify-center max-w-7xl">
                            
                             <div className="relative overflow-hidden w-full pt-[56.25%] mt-8 px-4">
-                            <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%]"  src="https://www.youtube.com/embed/COgcbafLbLo" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
+                            <iframe className="absolute top-0 left-0 right-0 bottom-0 w-full h-[100%] videoFrame"  title="YouTube video player" lazy="true" allowFullScreen></iframe>
                             </div>
                             <div className="py-8">
                                 <ButtonPink link="https://github.com/cmattUK/UE4BuildingEscape" buttonType="border" title ='View C++ code' iconName={<AiOutlineGithub className="inline"/>}/>
