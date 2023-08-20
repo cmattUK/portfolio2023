@@ -1,7 +1,7 @@
 function WorkExample(props){
     return(
         <div className="md:flex md:flex-row md:justify-between md:justify-items-center mt-4 pt-16 bg-none">
-            <div className="md:w-6/12 z-0 mb-4 pb-2 md:mb-0 md:pb-0 order-first md:order-first">
+            <div className="md:w-6/12 z-0 mb-4 pb-2 md:mb-0 md:pb-0 w-full order-first md:order-first">
                 <a href={props.imageLink} target="_blank" rel="noopener noreferrer">{props.image}</a>
             </div>
             <div className="w-full md:w-6/12 justify-self-center md:pl-4">

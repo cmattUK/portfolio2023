@@ -23,10 +23,8 @@ function Work(){
       } else{
         videoDiv.src = `temp`;
       }
-    console.log(videoDiv)
+    //console.log(videoDiv)
       setModal(!modalOn);
-   
-
     };
 
     return(

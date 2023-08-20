@@ -11,6 +11,10 @@ function ButtonPink(props) {
     function setCopied(){
         copyTo();
         setCopy(true);
+        setTimeout(function(){
+            setCopy(false);
+            //console.log(isCopied)
+        }, 1500);
     }
 
     let setStyle = `px-4 py-3 bg bg-rose-700 text-xl font-semibold text-white hover:bg-rose-900 inline-block text-center hover:cursor-pointer`;
