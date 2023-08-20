@@ -13,12 +13,12 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 
 export default function Home() {
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [hasLoaded, setLoaded] = useState(false);
   let [color, setColor] = useState("#9f1239");
 
   useEffect(() => {
-    setLoading(true);
+ 
     setTimeout(() => {
       setLoaded(true);
       setTimeout(() => {
