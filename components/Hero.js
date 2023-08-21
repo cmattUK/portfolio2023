@@ -24,7 +24,7 @@ function Hero(){
         <section className="heroSection columns-1 text-center mx-auto h-screen flex content-center w-full">
             <div className="flex justify-around flex-col w-full z-10">
                 <div className="md:max-w-[1200px] mx-w-[350px] mx-auto">
-                    <Image src={portrait} className='mx-auto md:-mt-12 w-2/6 md:w-2/12 -mt-12'  alt="A picture of Chris Matthewman"/>
+                    <Image src={portrait} className='mx-auto md:-mt-12 w-2/6 md:w-2/12 -mt-12'  alt="A picture of Chris Matthewman"  priority/>
                     <h1  className="Mons md:text-6xl lg:text-8xl text-3xl flex flex-col font-black text-zinc-800 md:pt-4 md:mt-4 mt-2 md:py-4 px-4">CHRIS MATTHEWMAN<span className="md:text-4xl text-base font-black md:p-4 p-2  mx-4 ">DESIGNER | DEVELOPER</span></h1>
                     <p className="text-zinc-800 p-4 md:text-xl text-sm max-w-[1080px] mx-auto -mt-4 font-normal">I’m an enthusiastic creative with a love for both front-end and server-side code. The web gives me an incredibly flexible canvas to indulge in all my favourite creative disciplines. </p>
                     <div className="md:flex md:flex-row md:justify-center">

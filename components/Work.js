@@ -35,7 +35,7 @@ function Work(){
                 <WorkExampleRight 
                     imageLink="https://animex.tees.ac.uk"
                     image={
-                        <Image src={work6} className="w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
+                        <Image src={work6} className="w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="The animex website running on a laptop"/>
                         } 
                     title="Animex" 
                     responsabilities=": CSS | HTML | BOOTSTRAP | DESIGN | JQUERY | SQL | COLDFUSION" 
@@ -50,7 +50,7 @@ function Work(){
                 <WorkExample 
                     imageLink="https://www.tees.ac.uk/depts/hr/"
                     image={
-                        <Image src={work4} className=" w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
+                        <Image src={work4} className=" w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="The HR website running on a laptop"/>
                         } 
                     title="HR minisite" 
                     responsabilities=": CSS | HTML | DESIGN | JQUERY | SQL | AJAX | COLDFUSION " 
@@ -64,7 +64,7 @@ function Work(){
                 <WorkExampleRight 
                     imageLink="https://www.tees.ac.uk/sections/stud/"
                     image={
-                        <Image src={work3} className="w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
+                        <Image src={work3} className="w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="An image of the Student Life website running on a laptop"/>
                         } 
                     title="Student Life" 
                     responsabilities=": CSS | HTML | DESIGN | JQUERY | JSON | SQL | COLDFUSION" 
@@ -76,7 +76,7 @@ function Work(){
 
                 <WorkExample 
                     image={
-                        <Image src={work7} onClick={toggleModal} className="hover:cursor-pointer w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
+                        <Image src={work7} onClick={toggleModal} className="hover:cursor-pointer w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100" alt="An image of my Building Escape game built in unreal engine 4"/>
                         } 
                     title="Building escape - UE4 C++" 
                     responsabilities=": Unreal Engine 4 | C++ " 
