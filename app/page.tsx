@@ -17,40 +17,39 @@ export default function Home() {
   const [hasLoaded, setLoaded] = useState(false);
   let [color, setColor] = useState("#9f1239");
 
-  useEffect(() => {
- 
+  function loadSwap (){
     setTimeout(() => {
       setLoaded(true);
       setTimeout(() => {
         setLoading(false);
-    }, 300);
-    }, 2700);
-  }, []); 
+      }, 300);
+    }, 1500);
+  }
+
 
   return (
-    <main className="border-t-4 border-rose-600">
-      {loading ? 
-      (
-        <div className={`flex justify-center items-center  h-screen ${hasLoaded ? 'transition ease-out duration-300 translate-y-full':'translate-y-0'}`}>
-          <ScaleLoader
-            color={color}
-            loading={loading}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
+    <main>
+      <div onLoad={loadSwap} className="relative">
+        <div className={`absolute top-0 flex justify-center items-center w-full h-screen z-20 ${hasLoaded ? 'transition ease-out duration-300 scale-0 overflow-hidden opacity-0':'scale-100 opacity-100'}`}>
+          <div className="mx-auto">
+            <ScaleLoader
+              color={color}
+              loading={loading}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          </div>
         </div>
-      ) : 
-      (
-        <div>
-        <Nav/>
-        <Hero/>
-        <About/>
-        <Work/>
-        <VideoWork/>
-        <More/>
-        <Quotes/>
+        <div className={`top-0 left-0 relative z-10 border-t-4 border-rose-600  ${!loading ? 'transition ease-in duration-200 visible':'hidden'}`}>
+          <Nav/>
+          <Hero/>
+          <About/>
+          <Work/>
+          <VideoWork/>
+          <More/>
+          <Quotes/>
         </div>
-      )}
+      </div>
     </main>
   )
 }
