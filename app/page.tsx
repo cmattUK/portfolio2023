@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main>
-      <div onLoad={loadSwap} className="relative">
+      <div  className="relative">
         <div className={`absolute top-0 flex justify-center items-center w-full h-screen z-20 ${hasLoaded ? 'transition ease-out duration-300 scale-0 overflow-hidden opacity-0':'scale-100 opacity-100'}`}>
           <div className="mx-auto">
             <ScaleLoader
@@ -40,7 +40,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={`top-0 left-0 relative z-10 border-t-4 border-rose-600  ${!loading ? 'transition ease-in duration-200 visible':'hidden'}`}>
+        <div onLoad={loadSwap} className={`top-0 left-0 relative z-10 border-t-4 border-rose-600  ${!loading ? 'transition ease-in duration-200 visible':'hidden'}`}>
           <Nav/>
           <Hero/>
           <About/>
