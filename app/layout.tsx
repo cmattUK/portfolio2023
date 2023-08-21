@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 
 export const metadata: Metadata = {
-  title: 'Chris Matthewman Portfolio 2023',
+  title: `Chris Matthewman's Portfolio 2023`,
   description: 'Created with next.js and tailwind.css',
 }
 

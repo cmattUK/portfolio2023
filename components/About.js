@@ -5,7 +5,7 @@ import BodyLink from './bodyLink';
 
 function About(){
     return(
-            <section className="aboutSection px-4  bg-gray-100 mb-4 pt-10 pb-16">
+            <section className="aboutSection px-4 bg-gray-100 mb-4 pt-10 pb-16">
                 <div className="max-w-[1200px] mx-auto p-4 flex flex-col relative">
                     <div className=" text-zinc-800 text-left relative">
                         <div className="pb-4 w-full md:w-7/12">

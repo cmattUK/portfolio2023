@@ -89,18 +89,16 @@ function Work(){
                 <div className={`bg-white bg-opacity-90 fixed inset-0 z-10 overflow-y-auto w-full  ${modalOn ? 'transition ease-in-out delay-100 scale-100' : 'transition ease-in-out delay-100 scale-0'}`} onClick={toggleModal}>
                     <div className="relative overflow-scroll w-full h-screen" onClick={toggleModal}>
                         <div className="absolute top-0 left-0 right-0 bottom-0 w-[90%] mx-auto flex flex-col  pr-8 justify-center max-w-7xl">
-                           
                             <div className="relative overflow-hidden w-full pt-[56.25%] md:mt-8  px-4">
                             <iframe className="absolute md:top-0  left-0 right-0 bottom-0 w-full h-[100%] videoFrame"  title="YouTube video player" lazy="true" allowFullScreen></iframe>
                             </div>
                             <div className="py-8">
                                 <ButtonPink link="https://github.com/cmattUK/UE4BuildingEscape" buttonType="border" title ='View C++ code' iconName={<AiOutlineGithub className="inline"/>}/>
-                                <div className="mr-2 float-right">
+                                <div className="md:mr-2 md:float-right md:-mt-0 mt-2">
                                     <ButtonPink title="X Close" className="hover:cursor-pointer"/>
                                 </div>
                             </div>
                         </div>
-              
                     </div>
                 </div>   
             </div>

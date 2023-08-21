@@ -13,9 +13,9 @@ function More(){
     return(
             <section className="moreSection px-4 py-12 ">
                 <div className="max-w-[1200px] mx-auto px-4 flex flex-col relative pb-6">
-                    <div className=" text-zinc-800 text-center relative mx-auto">
+                    <div className="text-zinc-800 text-center relative mx-auto">
                         <div className="pb-4 w-full">
-                            <h2 className="uppercase font-black text-3xl  pt-4">Want to know more?</h2>
+                            <h2 className="uppercase font-black text-3xl pt-4">Want to know more?</h2>
                             <p className="py-4 text-lg max-w-[900px]">
                                 Now that you know what I'm all about, and you're not completely repelled by my obsession with the spooky and the macabre, I'd love it if you got in touch. Thanks for taking the time to look me up.
                             </p>
