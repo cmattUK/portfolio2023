@@ -19,7 +19,7 @@ function About(){
                         <Image src={controller} className="absolute top-16 right-8 -mr-9 w-[500px] origin-top-left -rotate-12 invisible md:visible transition ease-in-out delay-150 z-10"  alt="A Playstation 4 controller"/>
                     </div>
                     <div className="none md:block mx-auto max-w-[1200px] -mt-2 order-first md:order-last relative">
-                        <Image src={aboutImage} className="w-full z-0 mb-4 pb-2 md:mb-0 md:pb-0" alt="Chris Matthewman wearing a monster mask reading a book about the horror movie Creepshow"/>
+                        <Image src={aboutImage} className="w-full z-0 mb-4 pb-2 md:mb-0 md:pb-0" alt="Chris Matthewman wearing a monster mask reading about the horror movie Creepshow"/>
                         <div className="triangle-container absolute -bottom-0 md:-bottom-5 -left-6 rotate-[20deg] animate-waving origin-center">
                             <svg height="60" width="60" className="fill-rose-600">
                                 <polygon points="30,10 0,60 60,60" className="triangle" />
