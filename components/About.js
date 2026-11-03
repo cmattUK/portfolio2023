@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import controller from '../public/img/controller.png';
-import aboutImage from '../public/img/hobbyblock1.jpg';
+import controller from '/public/img/controller.png';
+import aboutImage from '/public/img/hobbyblock1.jpg';
 import BodyLink from './bodyLink';
 
 function About(){
