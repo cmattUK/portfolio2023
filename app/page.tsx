@@ -9,16 +9,17 @@ import PreLoader from '../components/PreLoader';
 import {useState} from 'react';
 import dynamic from 'next/dynamic'
 import { Result } from 'postcss';
+import { setTimeout } from 'timers/promises';
 
 
 export default function Home() {
   const [isLoading, setLoading] = useState(true);
+
   const PageContent = dynamic(() => import('../components/Portfolio'),  {
     ssr: false,
     loading: () => <PreLoader/>,
   });
   
-
   return (
     <main>
       <PageContent/>

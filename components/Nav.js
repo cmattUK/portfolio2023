@@ -1,6 +1,6 @@
 import {AiOutlineMail, AiFillPauseCircle, AiFillPlayCircle, AiFillGithub} from "react-icons/ai";
-import React from 'react'
-import {useState} from 'react'
+import React from 'react';
+import {useState} from 'react';
 
 import ReactAudioPlayer from 'react-audio-player';
 
